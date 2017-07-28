@@ -35,6 +35,7 @@ requires
   fmx;
 
 contains
+  Parnassus.FmxVclForm in '..\Parnassus.FmxVclForm.pas',
   Parnassus.FMXContainer in '..\Parnassus.FMXContainer.pas';
 
 end.

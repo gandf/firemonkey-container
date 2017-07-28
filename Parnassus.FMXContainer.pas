@@ -58,7 +58,7 @@ type
     FOnDestroyForm : TOnDestroyFMXFormEvent;
     FCreateFormCalled : Boolean;
     FHandlingFMXActivation : Boolean;
-	FAllowTabKey : Boolean;
+    FAllowTabKey : Boolean;
 
     procedure DoOnCreate;
     procedure DoOnDestroy;
@@ -99,7 +99,7 @@ type
     property FireMonkeyFormHandle : HWND read GetHostedFMXFormWindowHandle;
     property OnCreateFMXForm : TOnCreateFMXFormEvent read FOnCreateForm write FOnCreateForm;
     property OnDestroyFMXForm : TOnDestroyFMXFormEvent read FOnDestroyForm write FOnDestroyForm;
-	property AllowTabKey: Boolean read FAllowTabKey write FAllowTabKey default False;
+    property AllowTabKey: Boolean read FAllowTabKey write FAllowTabKey default False;
     property Align;
     property Anchors;
     property Constraints;
