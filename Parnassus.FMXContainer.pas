@@ -1066,6 +1066,7 @@ end;
 {$endif}
 
 initialization
+  VKAutoShowMode := TVKAutoShowMode.Never;
   PFPrintWindow := GetProcAddress(GetModuleHandle(Winapi.Windows.user32), 'PrintWindow'); // XP+ only
   // TVCLFormHook class constructor replacement (not a supported language feature in C++)
   TVCLFormHook.FFormHooks := TDictionary<Vcl.Forms.TCustomForm, TVCLFormHook>.Create;
